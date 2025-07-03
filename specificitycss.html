@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Css specificity and cascading </title>
+    <style>
+        h1{
+            color: orange;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color:purple;
+        }
+        /* This selector is known as Attribute selector*/
+        [data-x=a]{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div> /* Most priority goes to inline selectors */
+        <h1 style="color: maroon;"class="yellow cred cpurple" data-x="a"> CSS SPECIFICITY</h1>
+    </div>
+</body>
+</html>
