@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Overflow Properties</title>
+    <style>
+        .box{
+            width: 20vw;
+            height:10vh;
+            border: 2px solid black;
+            overflow: auto;/* generate scroll bar as per requirements */
+            /*controlling individuals*/
+            /*overflow-x: hidden;
+            overflow-y: scroll;*/
+            overflow: hidden auto; /* it takes as (x,y) coordinates */
+            /*white-space: nowrap;*/ /* it means content will not come to next line*/
+            /*text-overflow: ellipsis; */ /*it will show 3 dot when the box fills ups and do not show other words */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi incidunt, ut in quibusdam
+        architecto cum quod veniam, sunt reprehenderit culpa dicta, amet fugiat omnis blanditiis est dolorum recusandae
+        explicabo. Odio libero voluptas corrupti autem error repellat consequatur possimus debitis odit velit! Animi
+        excepturi voluptatem eligendi veniam temporibus maiores distinctio?
+    </div>
+</body>
+
+</html>
