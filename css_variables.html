@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /*CSS Variable declaration*/
+        /* :root is used to declare global variable & initialise using var() */
+        /* css var color ke saath aur bhi prop hold krte haii */
+        :root{
+             --color: rgb(153, 190, 100);
+             --secccolor: rgb(185, 199, 161);
+             /*cs var other prop*/
+             --defpad:34 px;
+             --defop:0.4px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .nav{
+        background-color: var(--color);
+       }
+       ul{
+        display: flex;
+       }
+       ul li{
+        opacity:var(--defop);/* its words on text fade */
+        list-style: none;
+        padding: var(--defpad);
+        border: 9px solid var(--secccolor);
+       }
+       ul li:first-child{
+         --color: rgb(208, 136, 53);
+         background-color: var(--color);
+         /* agar color naam ka koi var kahi declare nhi hoga to 
+         background-color: var(--color , blue) denge jisse agar ye 
+         color var nhii mile to blue color le kr use kre */
+       }
+       
+       .container{
+        background-color: var(--secccolor);
+       }
+       .max{
+         --color: rgb(218, 194, 71);
+         background-color: var(--color);
+       }
+       .max1{
+         --color: rgb(127, 217, 127);
+         background-color: var(--color);
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li class="max">About</li>
+            <li class="max1">Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quos rerum mollitia officia quaerat provident
+        qui! Non ipsa soluta modi, vitae consectetur pariatur quis? Adipisci, optio dolorum, quam non unde dolorem quos
+        laboriosam molestias ducimus dolores, reprehenderit explicabo ab? Cumque quos reprehenderit a repellat? Hic!
+    </div>
+</body>
+
+</html>
