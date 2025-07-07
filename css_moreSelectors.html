@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child {
+            background-color: rgb(100, 90, 90);
+        } */
+
+        /* .box::first-line {
+            color: red;
+        } */
+        /* .boxes *{
+            color: rgb(74, 74, 203);
+            border: 2px solid black;
+        }*/
+
+        /*This is a attribute selectors and grouping*/
+        /* p, a , box, [data-color="primary"]{
+           padding-top: 45px;
+            
+        } */
+         /* .box:nth-child(even){
+            background-color: rgb(225, 195, 27);
+         }*/
+         .box:nth-last-child(1){
+            background-color: green;
+              /*last se 1st ka color change krega*/
+
+
+         }
+         .boxes::before{
+            /*it is used to insert new content before the main content which is previously created*/
+            content: "Yash is good";
+            background-color: rgb(31, 27, 27);
+            color: silver;
+         }
+         .boxes::after{
+            /*it is used to insert new content before the main content which is previously created*/
+            content: "Yash is now also good";
+            color: gold;
+         }
+         
+         /*selections*/
+        ::selection{
+            color: rgb(237, 150, 237);
+            background-color: rgb(221, 75, 99);
+        }
+        .box::first-letter{
+         color: peru;
+         font-size: 45px;
+        }
+       
+input::placeholder{
+    color: rgb(236, 233, 239);
+    font-size: 10px;
+    background-color: black;
+}
+         </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">i am a first child
+        </div>
+        <div class="box">hey i am a second box</div>
+        <div class="box">hey i am a third box</div>
+        <input type="text" placeholder="Type your name here!!">
+    </div>
+</body>
+
+</html>
