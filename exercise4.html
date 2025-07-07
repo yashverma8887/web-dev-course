@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multi color website</title>
+    <style>
+        :root{
+            --primarycolor:rgb(64, 25, 64);
+            --textcolor:rgb(156, 200, 127);
+            --secondarycolor:rgb(68, 130, 111);
+        }
+        body{
+            background-color: var(--primarycolor);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color:var(--secondarycolor);
+            padding: 20px 0px;
+        }
+      ul li{
+        list-style: none;
+        display:inline; /* replace the use of display flex */
+        padding: 23px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 440;
+        color: var(--textcolor);
+      }
+      ul li a{
+        color: var(--textcolor);
+        text-decoration: none; /* to remove the underline from a link */
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+              <ul>
+                <li><a href="/">Home</a></li> <!--used "/" to make it a link and make a anchor tag -->
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+              </ul>
+        </nav>
+    </header>
+</body>
+</html>
