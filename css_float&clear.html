@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+            /*isse  overflow image border ke andar aa  jata hai*/
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        img {
+            float:left;
+        }
+        /*partiular div  ke right pr ab img float nhi karega*/
+        .card:nth-child(3){
+            background-color: rgb(118, 105, 105);
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <!--child 1-->
+        <img src="https://media.istockphoto.com/id/1381637603/photo/mountain-landscape.jpg?s=1024x1024&w=is&k=20&c=C9JwCd6nvW_0hmfolDgi5uq2yAqeNWwyqLgZdODGsEQ="
+            alt="scenery image" width="250px" height="250px">
+         <!--child 2-->
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eligendi iusto aliquam
+            voluptas hic fugit obcaecati inventore dicta debitis nihil? Id placeat animi, veritatis, vero possimus
+            voluptatum deserunt voluptate, voluptatibus ipsa molestiae reprehenderit deleniti?</div>
+
+            <!--child 3-->
+        <div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur porro eos, tempora
+            eaque debitis vel atque dolore officiis, reprehenderit, dicta neque sequi eum impedit voluptate. Id, nisi
+            magni incidunt reprehenderit, alias quam magnam excepturi, quae praesentium maxime at. Nam vel, consequatur
+            non ab accusantium quo, placeat minus totam hic dolorem quas dolores porro illum illo quia cumque eos ut
+            delectus deserunt corporis error iure asperiores sequi quibusdam. Reiciendis minus eos est, officia earum
+            voluptatibus, fuga optio culpa vel corporis aspernatur neque unde, provident repellat nemo illo accusamus
+            quibusdam reprehenderit! Ut sit, rem accusantium, dolorem quis, nesciunt numquam voluptas explicabo commodi
+            mollitia inventore at iusto consectetur corporis. Quidem, error voluptate, nihil asperiores voluptas sed
+            quos, modi nesciunt illum est quas at animi officiis culpa quia. Quidem soluta, odit sunt porro ipsam illo
+            laborum asperiores eum odio similique omnis ducimus. Ab, tenetur cum possimus soluta recusandae reiciendis
+            sunt quaerat fugit itaque odio tempore atque omnis porro ea, dolorem laboriosam quia. Reiciendis enim,
+            cupiditate vitae, quae sapiente minus, ab dignissimos temporibus perspiciatis quam provident. Rem amet fuga
+            eos laborum totam impedit recusandae error aut veritatis assumenda ab, unde ratione optio ipsum quam dolore
+            voluptatibus ullam accusamus fugiat a distinctio. Asperiores odit ut fuga temporibus tenetur adipisci alias
+            veritatis ipsa repudiandae porro, dolor corporis molestias delectus eius aut amet odio, cum consequuntur
+            officiis a, nihil recusandae optio sapiente magnam. Fugit, ut. Facere nobis aliquam iusto temporibus
+            doloribus sunt perspiciatis, repudiandae in omnis impedit repellat! Ducimus quisquam enim, eveniet possimus
+            totam labore doloribus. Neque atque ducimus dolores aliquid non earum labore assumenda exercitationem sint
+            quis itaque natus porro minus dolorum aperiam, inventore suscipit necessitatibus optio consectetur
+            accusamus? Incidunt, obcaecati eaque ea, laboriosam maiores in commodi consectetur facilis quibusdam
+            delectus facere ipsa fuga eligendi reprehenderit ex expedita nam, natus excepturi. Incidunt temporibus
+            deleniti ut qui asperiores repudiandae recusandae! Sit officia eius molestiae voluptatibus praesentium atque
+            asperiores delectus nesciunt architecto, quaerat eligendi consequatur tenetur culpa nulla dolores odit illum
+            excepturi assumenda dignissimos hic expedita rerum optio neque veritatis! Quas, neque quibusdam!</div>
+
+            <!--child 4-->
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>
