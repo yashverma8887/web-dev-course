@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid blue;
+            display: flex;
+            height: 80vh;
+            justify-content: center;
+            /*align the content in center horizontally */
+            align-items: center;
+            /*align the content in center vertically */
+            /* flex-direction: column; */
+            flex-direction: column-reverse;
+            /*Down to top*/
+            /*Flex Wrap: tb  use krte hai jb content jyda hone ke wjha se overflow kre container se to wrap use krke overflow ho rhe content ko niche wale line me late hai*/
+            /* flex-wrap: wrap; */
+            /* align-content: center; */ /*jo content ek se jyda kine me ho aur upar niche ho to center me lane ke liye use krte hai*/
+            /*there is no justify items features*/
+            flex-flow: row wrap; /* flex krna kaha hai , pahele direction denge phirr kaha krna haii */
+            gap: 30px; /*used to define the gap b/w the items , seperate row aur col me laga skte hai*/
+        }
+
+        .item {
+            /* flex-grow:1; */
+            /*by default 0 hota hai*/
+            /*flew grow ka mtlb haii width me sare items equal space lenge*/
+            height: 56px;
+            width: 56px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: rgb(178, 124, 178);
+            /*Items Property*/
+        }
+            .order-1{
+                order 1;
+            }
+           .order-2{
+                order 2;
+            }
+            .order-3{
+                order 3;
+            }
+        .item1{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            /*flex-shrink : ability of a flex items to shrink if necessary*/
+            align-self:flex-start;
+        }
+        .item2{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!--order is inversily proportional to items 
+            jitna jyda order utne end me item aayega
+            default oder 0 hota hai -->
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item item2">3</div>
+            <div class="item">4</div>
+            <div class="item" order-3>5</div>
+        </div>
+    </main>
+</body>
+
+</html>
