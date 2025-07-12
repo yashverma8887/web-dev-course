@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Position</title>
+    <style>
+        .container {
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            background-color: aquamarine;
+        }
+
+        img {
+            width: 466px;
+            height: 488px;
+            object-fit: fill;
+            /*pura img width height ke a/t fill ho jayega*/
+            /* object-position: top right; */
+            /* top right side ki traf ka pura img dikhayega*/
+            /* object-fit: contain; */
+        }
+
+        .container1 {
+            height: 770px;
+            width: 880px;
+            background-position: center center;
+            background-image: url(https://media.istockphoto.com/id/2180341019/photo/smart-city-digital-transformation-development-concept.jpg?s=1024x1024&w=is&k=20&c=BDElDApdb-q2kRYfeYj1-OO1iK7MRGB9hg2dxNIuwJo=);
+            /* by default bg img repeat hota hai x aur y axis me  to stop we can use :  */
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/HU/RL/IU/46246564/plain-poster-scenery-1000x1000.jpg"
+            alt="Duck Image">
+    </div>
+    <div class="container1">
+
+    </div>
+</body>
+
+</html>
