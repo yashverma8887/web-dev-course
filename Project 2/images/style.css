@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* bg covers the whole screen */
+    position: relative;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.865);
+    backdrop-filter: blur(17px);
+    color: white;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-opt {
+    display: flex;
+
+}
+
+ul li {
+    margin-left: 27px;
+    list-style: none;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: aqua;
+}
+
+.card {
+    color: white;
+    background-color: rgba(181, 162, 162, 0.276);
+    backdrop-filter: blur(6px);
+    /*this prop is used for blur effect*/
+    border: 1px solid rgba(255, 255, 255, 0.324);
+    padding: 60px;
+    width: 700px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container::before {
+    content: ;
+    position: absolute;
+    /*iska postion jisme relative diye hai uske a/t change hoga*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.422);
+}
+
+.card h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.3rem;
+}
+
+.icon {
+    font-size: 19px;
+    display: none !important;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: aqua;
+}
+
+@media (max-width: 838px) {
+    .card {
+        width: 500px;
+    }
+}
+
+@media(max-width: 631px) {
+    .card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 598px) {
+    nav ul {
+        display: none !important;
+    }
+
+    .icon {
+        display: flex !important;
+    }
+}
+
+@media (max-width:440px) {
+    nav h1 {
+        font-size: 1.2rem;
+    }
+}
+
+footer {
+    color: rgb(239, 232, 232);
+    text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+    padding: 12px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.821);
+    position: sticky;
+    bottom: 0;
+}
+
+.offers-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card2 {
+    width: 30%;
+    padding: 1.5rem;
+    margin: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.427);
+    transition: 0.6s;
+}
+
+.card2:hover {
+    transform: scale(1.06);
+    border: 1px solid aqua;
+}
+
+.card2-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
